@@ -29,15 +29,15 @@ jobs:
         run: npm install
 
       - name: Setup EAS project (link)
-        run: eas init --id ${{ secrets.EXPO_PROJECT_ID }} --non-interactive
+        run: eas init --id 362ff944-d03d-4ade-882b-d38edec0ad44 --non-interactive
         continue-on-error: true
         env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          EXPO_TOKEN: JiVqQEfdgigAdaWzqpaidhAl9bBiuXHLYtrdVgdD
 
       - name: Build APK via EAS
         run: eas build --platform android --profile preview --non-interactive --no-wait
         env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          EXPO_TOKEN: JiVqQEfdgigAdaWzqpaidhAl9bBiuXHLYtrdVgdD
 
       - name: Wait for build and download APK
         run: |
