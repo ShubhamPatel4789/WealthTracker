@@ -18,8 +18,8 @@
     },
     "android": {
         "adaptiveIcon": {
-        "foregroundImage": "./adaptive-icon.png",
-        "backgroundColor": "#0B0F1A"
+          "foregroundImage": "./adaptive-icon.png",
+          "backgroundColor": "#0B0F1A"
       },
       "package": "com.wealthtracker.app",
       "versionCode": 1,
